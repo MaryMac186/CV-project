@@ -1,0 +1,210 @@
+* {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing:border-box;
+    line-height: 1.5;
+    color:#495057;
+    font-size: 13px;
+    
+}
+:root{
+    --primary-color: blue;
+} 
+.wrapper {
+    background-color: var(--primary-color);
+    display: grid;
+    gap: 20px;
+    margin: 20px 50px;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 20px;
+}
+
+.item { 
+    background-color: white;
+}
+
+.item:nth-child(3){
+    grid-row: 1/3;
+    grid-column: 3/4;
+}
+
+.goal1 {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f1f3f5;
+    padding: 10px 50px 10px 0;
+}
+
+.goal1 i {
+    padding: 0px 50px;
+    font-size: 1.5rem;
+}
+
+.Team1 {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.Date {
+    display:flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dotted #66d9e8 ;
+}
+
+.Team1 i{
+    padding: 0px 25px;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.number {
+    border-radius: 50%;
+    border: 1px solid grey;
+    width: 50px;
+    height: 50px;
+    background-color: #b197fc;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 17px;
+}
+
+.Date p:not(.number){
+    flex: 1;
+}
+
+.feature-icon {
+    width: 60px;
+    height: auto;
+}
+
+.primary1 {
+    display:flex;
+    padding: 10px 25px;
+    gap: 25px;
+}
+
+.title {
+    border-bottom: 1px solid #ced4da;
+    font-size: 1.75rem;
+    padding: 15px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.Scopes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Scopes .IN, .Scopes .OUT{
+    width: 50%;
+    padding: 0px 20px;
+    
+}
+
+.Scopes h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 15px;
+    font-style:bold;
+}
+
+.Scopes p {
+    padding-bottom: 15px;
+}
+
+.home-back {
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+a:link, a:visited {
+    color: blue;
+}
+
+a:hover, a:action {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .wrapper{
+        grid-template-columns: unset;
+    }
+    .item, .item:nth-child(3){
+        grid-column: 1/auto;
+    }
+    .wrapper .item:first-child{
+        grid-row: 1/2;
+    }
+    .wrapper .item:nth-child(4){
+        grid-row: 2/3;
+    }
+    .wrapper .item:nth-child(3){
+        grid-row: 5/6;
+    }
+    .goal1, .Scopes, .Team1, .primary1, .Date {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .primary1 {
+        align-items: center;
+    }
+    .Scopes .IN, .Scopes .OUT{
+        width: 100%;
+    }
+    
+    .goal1 {
+        padding-left: 15px;
+    }
+    .Date {
+       align-items: start;
+       padding-left: 15px;
+    }
+    .Team1 p {
+        align-items: left;
+        padding-left: 15px;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        grid-template-columns: unset;
+    }
+    .item, .item:nth-child(3){
+        grid-column: 1/auto;
+    }
+    .wrapper .item:first-child{
+        grid-row: 1/2;
+    }
+    .wrapper .item:nth-child(4){
+        grid-row: 2/3;
+    }
+    .wrapper .item:nth-child(3){
+        grid-row: 5/6;
+    }
+    .goal1, .Team1, .primary1, .Date {
+        flex-direction: column;
+    }
+    .primary1 {
+        align-items: center;
+    }
+    .goal1, .Team1, .primary1, .Date, .Scopes {
+        padding-bottom: 30px;
+    }
+    .Scopes .IN, .Scopes .OUT{
+    width: 100%;
+    }
+    .goal1 {
+        padding-left: 15px;
+    }
+    .Date {
+        align-items: start;
+        padding-left: 15px;
+    }  
+}

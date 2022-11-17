@@ -1,0 +1,39 @@
+@media (max-width: 767px) {
+    #nav-bar ul .name{
+    display: none;}
+
+    #nav-bar {
+        display: block;
+        margin-left: 10px;
+        text-align:left;
+    }
+
+    #nav-bar ul {   
+        display: block;
+        border-left: none;
+    }
+
+    #nav-bar ul a:link, a:visited {
+        display: block;
+        border-left: none;
+        text-align: left;
+        padding: 10px;
+    }
+    
+    #personal-info {
+        padding-right: 20px;
+        
+    }
+    .certificate-item:nth-child(odd) .certificate-content {
+        border-right: none;
+    }
+    .certificate img {
+        width: 100%;
+    }
+    .project-item{
+        margin-bottom: 50px;
+    }
+}
+
+
+    

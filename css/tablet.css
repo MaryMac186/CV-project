@@ -1,0 +1,31 @@
+@media (min-width:768px) and (max-width: 991px) {
+    #nav-bar ul .name{
+    display: none; }
+
+    .nav-bar a:link, a:visited {
+        padding: 10px;
+        margin-right: 1.5rem;
+    }
+    .certificate-content {
+        flex-direction:column;
+        gap: 30px;
+    }
+    .certificate-item:nth-child(odd) .certificate-content {
+        border-right: none;
+    }
+
+    .project-content {
+        width: 100%;
+    }
+    .project img {
+        width: 100%;
+    }
+    .project-time {
+        width: 100%;
+    }
+    .project table {
+        width: 100%;
+    }
+    
+}
+
