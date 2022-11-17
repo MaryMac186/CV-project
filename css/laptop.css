@@ -175,10 +175,11 @@ nav .container {
     border:solid #e9ecef;    
     padding-top: 20px;
     padding-left: 15px;
+    padding-bottom: 50px;
 }
 
 #Hobbies .h-content {
-    display: flex;
+    display: flex;  
     justify-content: space-evenly;
     padding-top: 20px;
     
@@ -221,6 +222,7 @@ nav .container {
     border:solid #e9ecef;  
     padding-top: 25px;   
     padding-left: 15px; 
+    padding-bottom: 50px;
 }
 
 #Language .score {
@@ -247,6 +249,7 @@ nav .container {
     padding-top: 25px;
     padding-left: 15px;
     font-size: 13px;
+    padding-bottom: 40px;
 }
 
 #Skills h1 {
